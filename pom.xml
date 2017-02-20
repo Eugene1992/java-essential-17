@@ -8,6 +8,7 @@
     <artifactId>java-essential-17</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <module>Dima</module>
         <module>ihor</module>
     </modules>
 
