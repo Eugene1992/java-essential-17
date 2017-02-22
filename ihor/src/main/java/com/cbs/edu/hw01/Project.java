@@ -16,7 +16,7 @@ public class Project {
     }
 
     /**
-     * sdfa sdsd
+     * Sdfa sdsd.
      * sdf
      *
      * @param newSprint asdfa

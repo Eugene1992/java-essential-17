@@ -6,7 +6,7 @@ package com.cbs.edu.hw01;
  */
 public class Main {
     /**
-     * skdj  hfksdd fhksdf'sdfg
+     * Skdj  hfksdd fhksdf'sdfg.
      * d sdflkg gf
      * sdfjg sdfg
      * sdfgdfg
@@ -27,24 +27,26 @@ public class Main {
         final int FOUR = 4;
         final int FIVE = 5;
 
-        Collaborator collaboratorOne = new Collaborator("A", TEN, TEN + ONE);
-        Collaborator collaboratorTwo = new Collaborator("B", TWENTY, TWENTY + ONE);
-        Collaborator collaboratorThree = new Collaborator("C", THIRTY, THIRTY + ONE);
-        Collaborator collaboratorFour = new Collaborator("D", FORTY, FORTY + ONE);
-        Collaborator collaboratorFive = new Collaborator("E", FIFTY, FIFTY + ONE);
-
         Task taskOne = new Task(ONE, TEN, ZERO);
-        Task taskTwo = new Task(ONE, TWENTY, ZERO);
-        Task taskThree = new Task(ONE, THIRTY, ZERO);
-        Task taskFour = new Task(TWO, FORTY, ONE);
-        Task taskFive = new Task(THREE, FIFTY, TWO);
-
+        Collaborator collaboratorOne = new Collaborator("A", TEN, TEN + ONE);
         taskOne.setArrCollaborator(collaboratorOne);
+
+        Task taskTwo = new Task(ONE, TWENTY, ZERO);
+        Collaborator collaboratorTwo = new Collaborator("B", TWENTY, TWENTY + ONE);
         taskTwo.setArrCollaborator(collaboratorTwo);
+
+        Task taskThree = new Task(ONE, THIRTY, ZERO);
+        Collaborator collaboratorThree = new Collaborator("C", THIRTY, THIRTY + ONE);
         taskThree.setArrCollaborator(collaboratorThree);
+
+        Task taskFour = new Task(TWO, FORTY, ONE);
+        Collaborator collaboratorFour = new Collaborator("D", FORTY, FORTY + ONE);
         taskFour.setArrCollaborator(collaboratorFour);
+        Collaborator collaboratorFive = new Collaborator("E", FIFTY, FIFTY + ONE);
         taskFour.setArrCollaborator(collaboratorFive);
         taskFour.setArrSubTask(taskThree);
+
+        Task taskFive = new Task(THREE, FIFTY, TWO);
         taskFive.setArrCollaborator(collaboratorThree, collaboratorFour, collaboratorFive);
         taskFive.setArrSubTask(taskOne, taskTwo);
 
