@@ -19,13 +19,13 @@ public class Main {
         americaCustomer.budget = 132000;
 
         Project americaProject = new Project();
-        americaProject.startDateDay = 13;
+        /*americaProject.startDateDay = 13;
         americaProject.startDateMon = 1;
         americaProject.startDateYear = 2017;
 
         americaProject.deadLineDay = 31;
         americaProject.startDateMon = 12;
-        americaProject.startDateYear = 2017;
+        americaProject.startDateYear = 2017;*/
 
         Sprint americaSprint = new Sprint();
 
