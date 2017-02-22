@@ -1,7 +1,7 @@
 package com.cbs.edu.hw01;
 
 /**
- * Main class 22.02.17.
+ * Main class updated 22.02.17.
  */
 public class Company {
     public static void main(String[] args) {
