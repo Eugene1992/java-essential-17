@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.Month;
 
 public class StaticContext {
+
     public static Company company;
 
     public static void main(String[] args) {
