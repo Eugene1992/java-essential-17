@@ -6,23 +6,56 @@ package com.cbs.edu.hw01;
  */
 public class Task {
     private int quantityCollaborator; // max 10
-    Collaborator[] arrCollaborator;
-    int timeLead;
+    private Collaborator[] arrCollaborator;
+    private int timeLead;
     private int quantitySudTask; // max 10
-    Task[] arrSubTask;
+    private Task[] arrSubTask;
 
-    /**
-     * конструктор
-     *
-     * @param quantityCollaborator
-     * @param timeLead
-     * @param quantitySudTask
-     */
     public Task(int quantityCollaborator, int timeLead, int quantitySudTask) {
         this.quantityCollaborator = quantityCollaborator;
         arrCollaborator = new Collaborator[quantityCollaborator];
         this.timeLead = timeLead;
         this.quantitySudTask = quantitySudTask;
         arrSubTask = new Task[quantitySudTask];
+    }
+
+    public Collaborator[] getArrCollaborator() {
+        return arrCollaborator;
+    }
+
+    public void setArrCollaborator(Collaborator collaboratorOne) {
+        this.arrCollaborator[0] = collaboratorOne;
+    }
+
+    public void setArrCollaborator(Collaborator collaboratorOne, Collaborator collaboratorTwo) {
+        this.arrCollaborator[0] = collaboratorOne;
+        this.arrCollaborator[1] = collaboratorTwo;
+    }
+
+    public void setArrCollaborator(Collaborator collaboratorOne, Collaborator collaboratorTwo, Collaborator collaboratorThree) {
+        this.arrCollaborator[0] = collaboratorOne;
+        this.arrCollaborator[1] = collaboratorTwo;
+        this.arrCollaborator[2] = collaboratorThree;
+    }
+
+    public int getTimeLead() {
+        return timeLead;
+    }
+
+    public void setTimeLead(int timeLead) {
+        this.timeLead = timeLead;
+    }
+
+    public Task[] getArrSubTask() {
+        return arrSubTask;
+    }
+
+    public void setArrSubTask(Task arrSubTask) {
+        this.arrSubTask[0] = arrSubTask;
+    }
+
+    public void setArrSubTask(Task arrSubTaskOne, Task arrSubTaskTwo) {
+        this.arrSubTask[0] = arrSubTaskOne;
+        this.arrSubTask[1] = arrSubTaskTwo;
     }
 }

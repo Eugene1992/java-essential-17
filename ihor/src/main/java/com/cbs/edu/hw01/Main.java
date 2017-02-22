@@ -2,32 +2,51 @@ package com.cbs.edu.hw01;
 
 /**
  * Created by ihor on 22.02.2017.
+ * jk
  */
 public class Main {
+    /**
+     * skdj  hfksdd fhksdf'sdfg
+     * d sdflkg gf
+     * sdfjg sdfg
+     * sdfgdfg
+     *
+     * @param args sdfgsdf
+     */
     public static void main(String[] args) {
-        Collaborator a = new Collaborator("A", 10, 11);
-        Collaborator b = new Collaborator("B", 20, 21);
-        Collaborator c = new Collaborator("C", 30, 31);
-        Collaborator d = new Collaborator("D", 40, 41);
-        Collaborator e = new Collaborator("E", 50, 51);
 
-        Task taskOne = new Task(1, 10, 0);
-        Task taskTwo = new Task(1, 20, 0);
-        Task taskThree = new Task(1, 30, 0);
-        Task taskFour = new Task(2, 40, 1);
-        Task taskFive = new Task(3, 50, 2);
+        final int TEN = 10;
+        final int TWENTY = 20;
+        final int THIRTY = 30;
+        final int FORTY = 40;
+        final int FIFTY = 50;
+        final int ZERO = 0;
+        final int ONE = 1;
+        final int TWO = 2;
+        final int THREE = 3;
+        final int FOUR = 4;
+        final int FIVE = 5;
 
-        taskOne.arrCollaborator[0] = a;
-        taskTwo.arrCollaborator[0] = b;
-        taskThree.arrCollaborator[0] = c;
-        taskFour.arrCollaborator[0] = d;
-        taskFour.arrCollaborator[0] = e;
-        taskFour.arrSubTask[0] = taskThree;
-        taskFive.arrCollaborator[0] = c;
-        taskFive.arrCollaborator[1] = d;
-        taskFive.arrCollaborator[2] = e;
-        taskFive.arrSubTask[0] = taskOne;
-        taskFive.arrSubTask[1] = taskTwo;
+        Collaborator collaboratorOne = new Collaborator("A", TEN, TEN + ONE);
+        Collaborator collaboratorTwo = new Collaborator("B", TWENTY, TWENTY + ONE);
+        Collaborator collaboratorThree = new Collaborator("C", THIRTY, THIRTY + ONE);
+        Collaborator collaboratorFour = new Collaborator("D", FORTY, FORTY + ONE);
+        Collaborator collaboratorFive = new Collaborator("E", FIFTY, FIFTY + ONE);
+
+        Task taskOne = new Task(ONE, TEN, ZERO);
+        Task taskTwo = new Task(ONE, TWENTY, ZERO);
+        Task taskThree = new Task(ONE, THIRTY, ZERO);
+        Task taskFour = new Task(TWO, FORTY, ONE);
+        Task taskFive = new Task(THREE, FIFTY, TWO);
+
+        taskOne.setArrCollaborator(collaboratorOne);
+        taskTwo.setArrCollaborator(collaboratorTwo);
+        taskThree.setArrCollaborator(collaboratorThree);
+        taskFour.setArrCollaborator(collaboratorFour);
+        taskFour.setArrCollaborator(collaboratorFive);
+        taskFour.setArrSubTask(taskThree);
+        taskFive.setArrCollaborator(collaboratorThree, collaboratorFour, collaboratorFive);
+        taskFive.setArrSubTask(taskOne, taskTwo);
 
         Sprint sprintOne = new Sprint(taskOne);
         Sprint sprintTwo = new Sprint(taskTwo);
@@ -35,11 +54,11 @@ public class Main {
         Sprint sprintFour = new Sprint(taskFour);
         Sprint sprintFive = new Sprint(taskFive);
 
-        Project projectOne = new Project(sprintFive, 10, 20);
-        Project projectTwo = new Project(sprintFour, 20, 30);
-        Project projectThree = new Project(sprintThree, 30, 40);
-        Project projectFour = new Project(sprintTwo, 40, 50);
-        Project projectFive = new Project(sprintOne, 50, 60);
+        Project projectOne = new Project(sprintFive, TEN, TWENTY + ONE);
+        Project projectTwo = new Project(sprintFour, TWENTY, THIRTY + TWO);
+        Project projectThree = new Project(sprintThree, THIRTY, FORTY + THREE);
+        Project projectFour = new Project(sprintTwo, FORTY, FIFTY + FOUR);
+        Project projectFive = new Project(sprintOne, FIFTY, FIFTY + FIVE);
 
         Customer customerOne = new Customer(projectOne);
         Customer customerTwo = new Customer(projectTwo);
@@ -47,15 +66,11 @@ public class Main {
         Customer customerFour = new Customer(projectFour);
         Customer customerFive = new Customer(projectFive);
 
-
-        Company companyOne = new Company();
-        companyOne.arrCustomer = new Customer[3];
-        companyOne.arrCustomer[0] = customerOne;
-        companyOne.arrCustomer[1] = customerTwo;
-        companyOne.arrCustomer[2] = customerThree;
-        Company companyTwo = new Company();
-        companyTwo.arrCustomer = new Customer[2];
-        companyTwo.arrCustomer[0] = customerFour;
-        companyTwo.arrCustomer[1] = customerFive;
+        Company companyOne = new Company(THREE);
+        Customer[] arrTempOne = {customerOne, customerTwo, customerThree};
+        companyOne.setArrCustomer(arrTempOne);
+        Company companyTwo = new Company(TWO);
+        Customer[] arrTempTwo = {customerFour, customerFive};
+        companyTwo.setArrCustomer(arrTempTwo);
     }
 }

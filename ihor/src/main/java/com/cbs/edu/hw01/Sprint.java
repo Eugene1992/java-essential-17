@@ -2,9 +2,10 @@ package com.cbs.edu.hw01;
 
 /**
  * Created by ihor on 22.02.2017.
+ * as
  */
 public class Sprint {
-    Task task;
+    private Task task;
     private boolean state; //false - not ready, true - done
 
     public Sprint(Task task) {
@@ -18,5 +19,13 @@ public class Sprint {
 
     public void setState(boolean state) {
         this.state = state;
+    }
+
+    public Task getTask() {
+        return task;
+    }
+
+    public void setTask(Task task) {
+        this.task = task;
     }
 }

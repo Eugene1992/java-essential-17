@@ -2,11 +2,12 @@ package com.cbs.edu.hw01;
 
 /**
  * Created by ihor on 22.02.2017.
+ * as
  */
 public class Project {
     private Sprint currentSprint;
-    int startData;
-    int stopData;
+    private int startData;
+    private int stopData;
 
     public Project(Sprint currentSprint, int startData, int stopData) {
         this.currentSprint = currentSprint;
@@ -15,8 +16,11 @@ public class Project {
     }
 
     /**
-     * @param newSprint
-     * @return true если поменяли фазу
+     * sdfa sdsd
+     * sdf
+     *
+     * @param newSprint asdfa
+     * @return asdfasd
      */
     public boolean setCurrentSprint(Sprint newSprint) {
         if (currentSprint.isState()) {
@@ -29,5 +33,21 @@ public class Project {
 
     public Sprint getCurrentSprint() {
         return currentSprint;
+    }
+
+    public int getStartData() {
+        return startData;
+    }
+
+    public void setStartData(int startData) {
+        this.startData = startData;
+    }
+
+    public int getStopData() {
+        return stopData;
+    }
+
+    public void setStopData(int stopData) {
+        this.stopData = stopData;
     }
 }
