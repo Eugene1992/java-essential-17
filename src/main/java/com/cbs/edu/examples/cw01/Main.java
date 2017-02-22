@@ -1,5 +1,7 @@
 package com.cbs.edu.examples.cw01;
 
+import com.cbs.edu.examples.cw02.Company;
+
 /**
  * Some comment.
  */
@@ -23,5 +25,7 @@ public class Main {
 
         Employee[] emps = {andrey, ivan};
 
+//        Company company = new Company("Tesla", "California", 10000000, 100);
+//        company.companyName = "";
     }
 }
