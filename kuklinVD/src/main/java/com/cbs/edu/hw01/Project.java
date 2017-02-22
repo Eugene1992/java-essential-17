@@ -6,4 +6,6 @@ package com.cbs.edu.hw01;
 public class Project {
     String startDate;
     String endDate;
+    Sprint[] sprints;
+    Customer customer;
 }
