@@ -1,84 +1,45 @@
 package com.cbs.edu.hw01;
 
+import java.time.LocalDate;
+import java.time.Month;
+
 /**
- * Main class updated 22.02.17.
+ * Main class.
  */
 public class Main {
+    /**
+     * Main class.
+     */
     public static void main(String[] args) {
-        Customer google = new Customer();
-        google.name = "Google.com";
-        google.customerId = 1;
-        google.projectId = 148;
-        Project googleProject = new Project();
-        googleProject.startDate = "01.12.17";
-        googleProject.endDate = "08.5.18";
-        Sprint googleProjectSprintFirst = new Sprint();
-        googleProjectSprintFirst.endDate = "27.03.18";
-        Task googleProjectTaskOne = new Task();
-        googleProjectTaskOne.runTime = 250;
-        Task googleProjectTaskSecond = new Task();
-        googleProjectTaskSecond.runTime = 150;
-        google.showInf();
+        Company google = new Company("Google.com", "USA", 10000000, 2000);
+        Customer googleCustomer = new Customer("Sergei Brin", 24, 27);
+        Project googleProject = new Project("Ara", LocalDate.of(2017, Month.APRIL, 1), LocalDate.of(2017, Month.DECEMBER, 20));
+        Sprint googleSprint = new Sprint("Alfa", LocalDate.of(2017, Month.APRIL, 1), LocalDate.of(2017, Month.JULY, 15));
+        Task googleTaskOne = new Task("Front-end", 150);
 
-        Customer facebook = new Customer();
-        facebook.name = "Facebook.com";
-        facebook.customerId = 7;
-        facebook.projectId = 136;
-        Project facebookProject = new Project();
-        facebookProject.startDate = "15.09.18";
-        facebookProject.endDate = "08.12.18";
-        Sprint facebookProjectSprintFirst = new Sprint();
-        facebookProjectSprintFirst.endDate = "02.11.18";
-        Task facebookProjectTaskOne = new Task();
-        facebookProjectTaskOne.runTime = 50;
-        Task facebookProjectTaskSecond = new Task();
-        facebookProjectTaskSecond.runTime = 20;
-        facebook.showInf();
+        Company apple = new Company("Apple.com", "USA", 100000, 140);
+        Customer appleCustomer = new Customer("Tim Kuk", 38, 142);
+        Project appleProject = new Project("Orange", LocalDate.of(2018, Month.JANUARY, 15), LocalDate.of(2018, Month.AUGUST, 20));
+        Sprint appleSprint = new Sprint("Beta", LocalDate.of(2017, Month.MARCH, 11), LocalDate.of(2017, Month.JULY, 10));
+        Task appleTask = new Task("Back-end", 350);
 
-        Customer apple = new Customer();
-        apple.name = "Apple.com";
-        apple.customerId = 24;
-        apple.projectId = 256;
-        Project appleProject = new Project();
-        appleProject.startDate = "11.03.19";
-        appleProject.endDate = "24.08.19";
-        Sprint appleProjectSprintFirst = new Sprint();
-        appleProjectSprintFirst.endDate = "05.06.19";
-        Task appleProjectTaskOne = new Task();
-        appleProjectTaskOne.runTime = 100;
-        apple.showInf();
+        Company tesla = new Company("Tesla.com", "USA", 5000000, 800);
+        Customer teslaCustomer = new Customer("Ilon Mask", 12, 71);
+        Project teslaProject = new Project("Ara", LocalDate.of(2017, Month.JANUARY, 15), LocalDate.of(2018, Month.AUGUST, 20));
+        Sprint teslaSprint = new Sprint("Prototype", LocalDate.of(2017, Month.FEBRUARY, 11), LocalDate.of(2017, Month.JULY, 10));
+        Task teslaTask = new Task("Prototype", 500);
 
-        Customer tesla = new Customer();
-        tesla.name = "Tesla.com";
-        tesla.customerId = 18;
-        tesla.projectId = 62;
-        Project teslaProject = new Project();
-        teslaProject.startDate = "11.03.20";
-        teslaProject.endDate = "24.08.20";
-        Sprint teslaProjectSprintFirst = new Sprint();
-        teslaProjectSprintFirst.endDate = "15.04.20";
-        Task teslaProjectTaskOne = new Task();
-        teslaProjectTaskOne.runTime = 150;
-        tesla.showInf();
+        Company facebook = new Company("Facebook.com", "USA", 9000000, 1500);
+        Customer facebookCustomer = new Customer("Mark Zukerberg", 45, 102);
+        Project facebookProject = new Project("Armbook", LocalDate.of(2019, Month.JANUARY, 15), LocalDate.of(2019, Month.AUGUST, 20));
+        Sprint facebookSprint = new Sprint("PreAlfa", LocalDate.of(2019, Month.FEBRUARY, 9), LocalDate.of(2018, Month.MAY, 14));
+        Task facebookTask = new Task("Something", 200);
 
-        Customer microsoft = new Customer();
-        microsoft.name = "Microsoft.com";
-        microsoft.customerId = 58;
-        microsoft.projectId = 279;
-        Project microsoftProject = new Project();
-        microsoftProject.startDate = "18.09.20";
-        microsoftProject.endDate = "13.04.21";
-        Sprint microsoftProjectSprintFirst = new Sprint();
-        microsoftProjectSprintFirst.endDate = "14.12.20";
-        Sprint microsoftProjectSprintSecond = new Sprint();
-        microsoftProjectSprintSecond.endDate = "10.02.21";
-        Task microsoftProjectTaskOne = new Task();
-        microsoftProjectTaskOne.runTime = 150;
-        Task microsoftProjectTaskTwo = new Task();
-        microsoftProjectTaskTwo.runTime = 50;
-        Task microsoftProjectTaskThree = new Task();
-        microsoftProjectTaskThree.runTime = 40;
-        microsoft.showInf();
+        Company asus = new Company("Asus.com", "USA", 1000000, 1480);
+        Customer asusCustomer = new Customer("Some Asian", 24, 27);
+        Project asusProject = new Project("Samurai", LocalDate.of(2020, Month.MAY, 1), LocalDate.of(2021, Month.FEBRUARY, 17));
+        Sprint asusSprint = new Sprint("Katana", LocalDate.of(2020, Month.SEPTEMBER, 11), LocalDate.of(2021, Month.DECEMBER, 21));
+        Task asusTask = new Task("Sharpen a blade", 200);
     }
 }
 
