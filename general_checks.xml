@@ -21,7 +21,7 @@
         Error messages: The name of the outer type and the file do not match.
         Doc ref:        http://checkstyle.sourceforge.net/config_misc.html#OuterTypeFilename
         -->
-        <module name="OuterTypeFilename"/>
+       <!-- <module name="OuterTypeFilename"/>-->
 
         <!--
         Description:    Checks for illegal token text.
@@ -124,14 +124,14 @@
         Error messages: More then one, check Doc for more details.
         Doc ref:        http://checkstyle.sourceforge.net/config_whitespace.html#WhitespaceAround
         -->
-        <module name="WhitespaceAround">
+       <!-- <module name="WhitespaceAround">
             <property name="allowEmptyConstructors" value="true"/>
             <property name="allowEmptyMethods" value="false"/>
             <property name="allowEmptyTypes" value="true"/>
             <property name="allowEmptyLoops" value="true"/>
             <message key="ws.notFollowed" value="WhitespaceAround: ''{0}'' is not followed by whitespace. Empty blocks may only be represented as '{}' when not part of a multi-block statement (4.1.3)"/>
             <message key="ws.notPreceded" value="WhitespaceAround: ''{0}'' is not preceded with whitespace."/>
-        </module>
+        </module>-->
 
         <!--
         Description:    Checks that there is only one statement per line.
@@ -698,7 +698,7 @@
                         defined as a constant. By default, -1, 0, 1, and 2 are not considered to be magic numbers.
         Doc ref:        http://checkstyle.sourceforge.net/config_coding.html#MagicNumber
         -->
-        <module name="MagicNumber"/>
+        <!--<module name="MagicNumber"/>-->
 
         <!--
         Description:    The Check finds classes that are designed for extension (subclass creation). Check Doc for details.
