@@ -5,7 +5,5 @@ package com.cbs.edu;
  * Created by Vladimir on 21.02.2017.
  */
 public class Sprint {
-    String firstSprint;
-    String secondSprint;
-    String thirdSprint;
+    Task[] tasks;
 }
