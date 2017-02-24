@@ -35,7 +35,10 @@ public class Customer {
         return customerAge;
     }
 
-    public void setCustomerAge(int customerAge) {
+    public void setCustomerAge(int customerAge) throws Exception {
+        if (customerAge < 0) {
+            throw new Exception("Age can not be negative");
+        }
         this.customerAge = customerAge;
     }
 }

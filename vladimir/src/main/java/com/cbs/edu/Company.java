@@ -46,7 +46,14 @@ public class Company {
         return amountOfWorkers;
     }
 
-    public void setAmountOfWorkers(int amountOfWorkers) {
+    /**
+     * @autor kaban.
+     */
+    public void setAmountOfWorkers(int amountOfWorkers) throws Exception {
+        if (amountOfWorkers < 0) {
+            throw new IllegalArgumentException("The number of employees can not be negative");
+        }
         this.amountOfWorkers = amountOfWorkers;
+
     }
 }
