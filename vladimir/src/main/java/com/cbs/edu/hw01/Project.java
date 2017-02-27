@@ -1,4 +1,4 @@
-package com.cbs.edu;
+package com.cbs.edu.hw01;
 
 
 import java.time.LocalDate;
