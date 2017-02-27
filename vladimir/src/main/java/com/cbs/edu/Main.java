@@ -4,6 +4,10 @@ package com.cbs.edu;
  * Solution homework.
  */
 public class Main {
+    /**
+     * DSdsds.
+     * @param args ssdss
+     */
     public static void main(String[] args) {
         Company vest = new Company();
         vest.companyName = " Amster";
