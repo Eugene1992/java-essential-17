@@ -5,9 +5,9 @@ package com.cbs.edu.hw03;
  */
 public class Rectangle extends Figure {
 
-    protected int b;
+    protected double b;
 
-    Rectangle(String figureName, int a, int b) {
+    Rectangle(String figureName, double a, double b) {
         super(figureName, a);
         this.b = b;
     }
@@ -16,12 +16,12 @@ public class Rectangle extends Figure {
         return b;
     }
 
-    public void setB(int b) {
+    public void setB(double b) {
         this.b = b;
     }
 
     @Override
-    public void result() {
-        System.out.println(figureName + " " + a * b);
+    public double result() {
+        return a * b;
     }
 }

@@ -9,18 +9,18 @@ import static org.junit.Assert.*;
 /**
  * Created by Vladimir on 27.02.2017.
  */
-public class FigureTest {
-    private Figure figure;
+public class RectangleTest {
+    private Rectangle rectangle;
 
     @Before
     public void setUp() throws Exception {
-        figure = new Figure("figure", 5);
+        rectangle = new Rectangle("Recatangle", 7, 9);
     }
 
     @Test
     public void result() throws Exception {
-        final double EXPECTED = 5;
-        final double ACTUAL = figure.result();
+        final double EXPECTED = 63;
+        final double ACTUAL = rectangle.result();
         Assert.assertEquals(EXPECTED, ACTUAL, 0.1);
 
     }

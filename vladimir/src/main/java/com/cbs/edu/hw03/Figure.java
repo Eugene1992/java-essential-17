@@ -6,9 +6,9 @@ package com.cbs.edu.hw03;
 public class Figure {
 
     protected String figureName;
-    protected int a;
+    protected double a;
 
-    public Figure(String figureName, int a) {
+    public Figure(String figureName, double a) {
         this.figureName = figureName;
         this.a = a;
     }
@@ -25,12 +25,12 @@ public class Figure {
         return a;
     }
 
-    public void setA(int a) {
+    public void setA(double a) {
         this.a = a;
     }
 
 
-    public void result() {
-        System.out.println(figureName + " " + a);
+    public double result() {
+        return a;
     }
 }

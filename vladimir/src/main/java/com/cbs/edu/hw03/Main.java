@@ -6,6 +6,7 @@ package com.cbs.edu.hw03;
 public class Main {
     /**
      * alslda.
+     *
      * @param args asda
      */
 
@@ -23,7 +24,7 @@ public class Main {
 
     public static void output(Figure... figures) {
         for (Figure figure : figures) {
-            figure.result();
+            System.out.printf("result of %s = %.1f\n", figure.figureName, figure.result());
         }
 
     }

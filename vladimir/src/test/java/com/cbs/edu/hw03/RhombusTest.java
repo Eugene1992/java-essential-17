@@ -9,20 +9,19 @@ import static org.junit.Assert.*;
 /**
  * Created by Vladimir on 27.02.2017.
  */
-public class FigureTest {
-    private Figure figure;
+public class RhombusTest {
+    private Rhombus rhombus;
 
     @Before
     public void setUp() throws Exception {
-        figure = new Figure("figure", 5);
+        rhombus = new Rhombus("Rhombus", 6, 3);
     }
 
     @Test
     public void result() throws Exception {
-        final double EXPECTED = 5;
-        final double ACTUAL = figure.result();
+        final double EXPECTED = 18;
+        final double ACTUAL = rhombus.result();
         Assert.assertEquals(EXPECTED, ACTUAL, 0.1);
-
     }
 
 }

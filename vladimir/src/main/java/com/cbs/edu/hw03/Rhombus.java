@@ -5,9 +5,9 @@ package com.cbs.edu.hw03;
  */
 public class Rhombus extends Figure {
 
-    protected int h;
+    protected double h;
 
-    Rhombus(String figureName, int a, int h) {
+    Rhombus(String figureName, double a, double h) {
         super(figureName, a);
         this.h = h;
     }
@@ -16,12 +16,12 @@ public class Rhombus extends Figure {
         return h;
     }
 
-    public void setH(int h) {
+    public void setH(double h) {
         this.h = h;
     }
 
     @Override
-    public void result() {
-        System.out.println(figureName + " " + a * h);
+    public double result() {
+        return a * h;
     }
 }

@@ -19,9 +19,9 @@ public class TriangleTest {
 
     @Test
     public void result() throws Exception {
-        final int EXPECTED = 6;
-        final int ACTUAL = 6 * 2 / 2;
-        Assert.assertEquals(EXPECTED, ACTUAL);
+        final double EXPECTED = 6;
+        final double ACTUAL = triangle.result();
+        Assert.assertEquals(EXPECTED, ACTUAL, 0.1);
     }
 
 }

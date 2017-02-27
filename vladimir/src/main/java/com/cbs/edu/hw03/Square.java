@@ -5,12 +5,12 @@ package com.cbs.edu.hw03;
  */
 public class Square extends Figure {
 
-    Square(String figureName, int a) {
+    Square(String figureName, double a) {
         super(figureName, a);
     }
 
     @Override
-    public void result() {
-        System.out.println(figureName + " " + a * a);
+    public double result() {
+        return a * a;
     }
 }

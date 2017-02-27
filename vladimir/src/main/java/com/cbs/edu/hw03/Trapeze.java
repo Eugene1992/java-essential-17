@@ -5,10 +5,10 @@ package com.cbs.edu.hw03;
  */
 public class Trapeze extends Figure {
 
-    protected int b;
-    protected int h;
+    protected double b;
+    protected double h;
 
-    Trapeze(String figureName, int a, int b, int h) {
+    Trapeze(String figureName, double a, double b, double h) {
         super(figureName, a);
         this.b = b;
         this.h = h;
@@ -18,7 +18,7 @@ public class Trapeze extends Figure {
         return b;
     }
 
-    public void setB(int b) {
+    public void setB(double b) {
         this.b = b;
     }
 
@@ -26,12 +26,12 @@ public class Trapeze extends Figure {
         return h;
     }
 
-    public void setH(int h) {
+    public void setH(double h) {
         this.h = h;
     }
 
     @Override
-    public void result() {
-        System.out.println(figureName + " " + (a + b) * h / 2);
+    public double result() {
+        return (a + b) * h / 2;
     }
 }

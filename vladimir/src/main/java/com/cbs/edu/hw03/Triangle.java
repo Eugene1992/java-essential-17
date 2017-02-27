@@ -5,9 +5,9 @@ package com.cbs.edu.hw03;
  */
 public class Triangle extends Figure {
 
-    protected int h;
+    protected double h;
 
-    public Triangle(String figureName, int a, int h) {
+    public Triangle(String figureName, double a, double h) {
         super(figureName, a);
         this.h = h;
     }
@@ -16,12 +16,12 @@ public class Triangle extends Figure {
         return h;
     }
 
-    public void setH(int h) {
+    public void setH(double h) {
         this.h = h;
     }
 
     @Override
-    public void result() {
-        System.out.println(figureName + " " + a * h / 2);
+    public double result() {
+        return a * h / 2;
     }
 }
