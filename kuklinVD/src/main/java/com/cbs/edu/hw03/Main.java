@@ -14,7 +14,10 @@ public class Main {
         Figure triangle = new Triangle("Triangle", 6.75, 5.47);
         Figure parallelogram = new Parallelogram("Parallelogram", 8.56, 4.17, 5.75);
         Figure trapezoid = new Trapezoid("Trapezoid", 7.23, 4.68, 5.11);
+        Figure roundFigure = new Circle("Circle", 10);
+
         area(rectangle, square, rhombus, triangle, parallelogram, trapezoid);
+
     }
 
     public static void area(Figure... figures) {

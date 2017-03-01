@@ -60,7 +60,7 @@
         <module name="OneTopLevelClass"/>
 
         <!--
-        Description:    Checks that chosen statements are not line-wrapped. By default this Check restricts
+        Description:    Checks that chosen statements are not line-wrapped. By default_ this Check restricts
                         wrapping import and package statements, but it's possible to check any statement.
         Example:        Bad:  import package com.puppycrawl.
                                         tools.checkstyle.checks;
@@ -376,7 +376,7 @@
         </module>
 
         <!--
-        Description:    Check location of annotation on language elements. By default, Check enforce to locate
+        Description:    Check location of annotation on language elements. By default_, Check enforce to locate
                         annotations immediately after documentation block and before target element, annotation
                         should be located on separate line from target element.
         Example:        Check Doc.
@@ -488,7 +488,7 @@
 
         <!--
         Description:    Checks Javadoc comments for class and interface definitions.
-                        By default, does not check for author or version tags.
+                        By default_, does not check for author or version tags.
         Doc ref:        http://checkstyle.sourceforge.net/config_javadoc.html#JavadocType
         -->
         <module name="JavadocType"/>
@@ -569,7 +569,7 @@
         <module name="StaticVariableName"/>
 
         <!--
-        Description:    Checks for imports from a set of illegal packages. By default, the check rejects
+        Description:    Checks for imports from a set of illegal packages. By default_, the check rejects
                         all sun.* packages since programs that contain direct calls to the sun.* packages
         Doc ref:        http://checkstyle.sourceforge.net/config_imports.html#IllegalImport
         -->
@@ -695,7 +695,7 @@
 
         <!--
         Description:    Checks that there are no "magic numbers" where a magic number is a numeric literal that is not
-                        defined as a constant. By default, -1, 0, 1, and 2 are not considered to be magic numbers.
+                        defined as a constant. By default_, -1, 0, 1, and 2 are not considered to be magic numbers.
         Doc ref:        http://checkstyle.sourceforge.net/config_coding.html#MagicNumber
         -->
         <!--<module name="MagicNumber"/>-->
@@ -765,7 +765,7 @@
         </module>
 
         <!--
-        Description:    Restricts nested try blocks to a specified depth (default = 1).
+        Description:    Restricts nested try blocks to a specified depth (default_ = 1).
         Doc ref:        http://checkstyle.sourceforge.net/config_coding.html#NestedIfDepth
         -->
         <module name="NestedTryDepth">
@@ -773,13 +773,13 @@
         </module>
 
         <!--
-        Description:    Check that the default is after all the cases in a switch statement.
+        Description:    Check that the default_ is after all the cases in a switch statement.
         Doc ref:        http://checkstyle.sourceforge.net/config_coding.html#DefaultComesLast
         -->
         <module name="DefaultComesLast"/>
 
         <!--
-        Description:    Check that the default is after all the cases in a switch statement.
+        Description:    Check that the default_ is after all the cases in a switch statement.
         Example:        if (count == true) {...}  // wrong
                         if (count) {...}          // right
         Doc ref:        http://checkstyle.sourceforge.net/config_coding.html#SimplifyBooleanExpression
@@ -817,13 +817,13 @@
         <module name="PackageDeclaration"/>
 
         <!--
-        Description:    Restricts nested if-else blocks to a specified depth (default = 1).
+        Description:    Restricts nested if-else blocks to a specified depth (default_ = 1).
         Doc ref:        http://checkstyle.sourceforge.net/config_coding.html#NestedIfDepth
         -->
         <module name="NestedIfDepth"/>
 
         <!--
-        Description:    Restricts nested for blocks to a specified depth (default = 1).
+        Description:    Restricts nested for blocks to a specified depth (default_ = 1).
         Doc ref:        http://checkstyle.sourceforge.net/config_coding.html#NestedForDepth
         -->
         <module name="NestedForDepth"/>

@@ -15,7 +15,7 @@ public class FigureTest {
 
     @Before
     public void setUp() throws Exception {
-        figure = new Figure("FigureTest", 5.69);
+//        figure = new Figure("FigureTest", 5.69);
     }
 
     @Test

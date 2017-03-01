@@ -3,7 +3,7 @@ package com.cbs.edu.hw03;
 /**
  * Base class for inheritance.
  */
-public class Figure {
+public abstract class Figure {
     protected String name;
     protected double a;
 
@@ -28,7 +28,5 @@ public class Figure {
         this.name = name;
     }
 
-    public double calculateArea() {
-        return a;
-    }
+    public abstract double calculateArea();
 }
