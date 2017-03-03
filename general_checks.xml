@@ -213,7 +213,7 @@
 
         <!--
         Description:    Checks for empty line separators after header, package, all import declarations, fields,
-                        constructors, methods, nested classes, static initializers and instance initializers.
+                        constructors, methods, inner classes, static initializers and instance initializers.
         Example:        Check Doc.
         Error messages: More then one.
         Doc ref:        http://checkstyle.sourceforge.net/config_whitespace.html#EmptyLineSeparator
@@ -650,7 +650,7 @@
         <module name="RedundantModifier"/>
 
         <!--
-        Description:    Finds nested blocks, i.e. blocks that are used freely in the code. Check Doc for details.
+        Description:    Finds inner blocks, i.e. blocks that are used freely in the code. Check Doc for details.
         Doc ref:        http://checkstyle.sourceforge.net/config_blocks.html#AvoidNestedBlocks
         -->
         <module name="AvoidNestedBlocks"/>
@@ -708,7 +708,7 @@
 
         <!--
         Description:    Checks that a class which has only private constructors is declared as final.
-                        Doesn't check for classes nested in interfaces or annotations, as they are always final there.
+                        Doesn't check for classes inner in interfaces or annotations, as they are always final there.
         Doc ref:        http://checkstyle.sourceforge.net/config_design.html#FinalClass
         -->
        <!--- <module name="FinalClass"/> -->
@@ -765,7 +765,7 @@
         </module>
 
         <!--
-        Description:    Restricts nested try blocks to a specified depth (default_ = 1).
+        Description:    Restricts inner try blocks to a specified depth (default_ = 1).
         Doc ref:        http://checkstyle.sourceforge.net/config_coding.html#NestedIfDepth
         -->
         <module name="NestedTryDepth">
@@ -817,13 +817,13 @@
         <module name="PackageDeclaration"/>
 
         <!--
-        Description:    Restricts nested if-else blocks to a specified depth (default_ = 1).
+        Description:    Restricts inner if-else blocks to a specified depth (default_ = 1).
         Doc ref:        http://checkstyle.sourceforge.net/config_coding.html#NestedIfDepth
         -->
         <module name="NestedIfDepth"/>
 
         <!--
-        Description:    Restricts nested for blocks to a specified depth (default_ = 1).
+        Description:    Restricts inner for blocks to a specified depth (default_ = 1).
         Doc ref:        http://checkstyle.sourceforge.net/config_coding.html#NestedForDepth
         -->
         <module name="NestedForDepth"/>
