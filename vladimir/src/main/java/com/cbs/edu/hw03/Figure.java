@@ -3,7 +3,7 @@ package com.cbs.edu.hw03;
 /**
  * Created by Vladimir on 26.02.2017.
  */
-public class Figure {
+public abstract class Figure {
 
     protected String figureName;
     protected double a;
@@ -30,7 +30,5 @@ public class Figure {
     }
 
 
-    public double result() {
-        return a;
-    }
+    public abstract double result();
 }
