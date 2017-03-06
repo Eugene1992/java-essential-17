@@ -14,16 +14,19 @@ public class RemoveStart {
         ArrayList<String> arrayList = new ArrayList<>();
         LinkedList<String> linkedList = new LinkedList<>();
         String value = "apple";
+
+        long alStart = System.nanoTime();
         for (int i = 0; i < 100; i++) {
             arrayList.add(value);
-            linkedList.add(value);
         }
-        long alStart = System.nanoTime();
         arrayList.remove(0);
         long alEnd = System.nanoTime();
-        System.out.println("ll: " + (alEnd - alStart));
+        System.out.println("al: " + (alEnd - alStart));
 
         long llStart = System.nanoTime();
+        for (int i = 0; i < 100; i++) {
+            linkedList.add(value);
+        }
         linkedList.remove(0);
         long llEnd = System.nanoTime();
         System.out.println("ll: " + (llEnd - llStart));

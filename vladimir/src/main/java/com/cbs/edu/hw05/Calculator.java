@@ -24,7 +24,7 @@ public class Calculator {
         final int START_POINT = findOperationPlace(place);
 
 
-       final long START = System.currentTimeMillis();
+        final long START = System.currentTimeMillis();
         switch (act) {
             case "ADD":
                 addCalculator(count, START_POINT);
@@ -55,17 +55,26 @@ public class Calculator {
 
     private void removeCalculator(int count, int startPoint) {
         for (int i = 0; i < count; i++) {
+            list.add(startPoint, testObj);
+        }
+        for (int i = 0; i < count; i++) {
             list.remove(startPoint);
         }
     }
 
     private void getCalculator(int count, int startPoint) {
         for (int i = 0; i < count; i++) {
+            list.add(startPoint, testObj);
+        }
+        for (int i = 0; i < count; i++) {
             list.get(startPoint);
         }
     }
 
     private void setCalculator(int count, int startPoint) {
+        for (int i = 0; i < count; i++) {
+            list.add(startPoint, testObj);
+        }
         for (int i = 0; i < count; i++) {
             list.set(startPoint, input);
         }
@@ -78,7 +87,7 @@ public class Calculator {
         } else if (place.equals("MIDDLE")) {
             placeNum = list.size() / 2;
         } else if (place.equals("END")) {
-            placeNum = list.size() - 1 ;
+            placeNum = list.size();
         } else {
             throw new IllegalArgumentException();
         }
