@@ -14,18 +14,21 @@ public class GetStart {
         ArrayList<String> arrayList = new ArrayList<>();
         LinkedList<String> linkedList = new LinkedList<>();
         String value = "apple";
-        for (int i = 0; i < 10; i++) {
-            arrayList.add(value);
-            linkedList.add(value);
-        }
+
 
         long alStart = System.nanoTime();
+        for (int i = 0; i < 10; i++) {
+            arrayList.add(value);
+        }
         String firstOutput = arrayList.get(0);
         long alEnd = System.nanoTime();
         System.out.println(firstOutput);
         System.out.println(alEnd - alStart);
 
         long llStart = System.nanoTime();
+            for (int i = 0; i < 10; i++) {
+                linkedList.add(value);
+            }
         String secondOutput = linkedList.get(0);
         long llEnd = System.nanoTime();
         System.out.println(secondOutput);

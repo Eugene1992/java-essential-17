@@ -18,11 +18,11 @@ public class Main {
 
         Calculator arrayListCalculator = new Calculator(arrayList, MAIN_VALUE, ELEMENT);
 
-        final long AL_RESULT = arrayListCalculator.operation("SET", "MIDDLE", MAIN_SIZE);
+        final long AL_RESULT = arrayListCalculator.operation("GET", "START", MAIN_SIZE);
         System.out.printf("AL %d items time : %d \n", MAIN_SIZE, AL_RESULT);
 //        arrayListCalculator.setList(linkedList);
         Calculator linkedListCalculator = new Calculator(arrayList, MAIN_VALUE, ELEMENT);
-        final long LL_RESULT = linkedListCalculator.operation("SET", "MIDDLE", MAIN_SIZE);
+        final long LL_RESULT = linkedListCalculator.operation("GET", "START", MAIN_SIZE);
         System.out.printf("LL %d items time : %d ", MAIN_SIZE, LL_RESULT);
 
 
