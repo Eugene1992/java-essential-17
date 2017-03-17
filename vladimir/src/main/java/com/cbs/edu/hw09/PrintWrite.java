@@ -10,6 +10,10 @@ public class PrintWrite {
     public PrintWrite() {
     }
 
+    /**
+     * @param args Hello.
+     */
+
     public static void main(String[] args) {
         try {
             PrintWriter out = new PrintWriter(new FileWriter("a.txt"));

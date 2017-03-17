@@ -7,6 +7,9 @@ public class NonExistentElement {
     public NonExistentElement() {
     }
 
+    /**
+     * @param args Hello.
+     */
     public static void main(String[] args) {
         try {
             String[] e = new String[]{"Mersedes", "Skoda", "Opel"};

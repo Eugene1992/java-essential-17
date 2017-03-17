@@ -7,6 +7,9 @@ public class InvalidArray {
     public InvalidArray() {
     }
 
+    /**
+     * @param args Hello.
+     */
     public static void main(String[] args) {
         try {
             int[] e = new int[-10];
